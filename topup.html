@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>เติมเงิน — Yamamo Shop</title>
+<link rel="stylesheet" href="style-01.css">
+<link rel="stylesheet" href="style-04.css">
+<link rel="stylesheet" href="style-10.css">
+<style>
+body{min-height:100vh;background:radial-gradient(circle at 50% -10%,#fff,#eef2f9 55%,#e7ecf5);color:#10213e}
+.topup-shell{width:min(760px,calc(100% - 28px));margin:34px auto 70px}
+.topup-nav{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:24px}
+.back{padding:10px 13px;border:1px solid #cbd6e7;border-radius:10px;background:#fff;color:#2942ba;font-weight:800;font-size:10px}
+.topup-brand{display:flex;align-items:center;gap:10px;font-weight:800}.topup-brand img{width:42px;height:42px;object-fit:cover;border-radius:12px}
+.topup-hero{padding:28px;border:1px solid #ccd7e8;border-radius:20px;background:linear-gradient(135deg,#071630,#173477 58%,#4a255f);color:#fff;box-shadow:0 18px 45px rgba(18,40,88,.16)}
+.topup-hero span{color:#8fdfff;font-size:9px;font-weight:800;letter-spacing:.13em}.topup-hero h1{margin:8px 0 5px;font-size:34px}.topup-hero p{margin:0;color:#d5e1f5;font-size:11px}
+.methods{display:grid;gap:12px;margin-top:18px}
+.method{display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:13px;padding:15px;border:1px solid #d3dceb;border-radius:15px;background:#fff;box-shadow:0 8px 24px rgba(20,42,90,.05)}
+.method-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:13px;color:#fff;background:linear-gradient(135deg,#17399f,#3155d5 60%,#6034ad);font-size:18px;font-weight:800}
+.method strong{display:block;font-size:13px}.method small{display:block;margin-top:3px;color:#8794a6;font-size:9px}
+.method button{padding:10px 12px;border-radius:9px;color:#fff;background:linear-gradient(135deg,#17399f,#3155d5 60%,#6034ad);font-size:9px;font-weight:800}
+.demo-note{margin-top:16px;padding:13px;border-left:3px solid #4d55d2;border-radius:10px;background:linear-gradient(135deg,#eef3ff,#f3efff);color:#65738b;font-size:9px}
+@media(max-width:560px){.topup-shell{margin-top:18px}.topup-hero{padding:22px}.topup-hero h1{font-size:28px}.method{grid-template-columns:44px 1fr}.method button{grid-column:1/-1;width:100%}}
+</style>
+</head>
+<body>
+<main class="topup-shell">
+  <div class="topup-nav">
+    <a class="topup-brand" href="./index.html"><img src="assets/yamamo-logo.webp" alt="Yamamo Shop"><span>Yamamo Shop</span></a>
+    <a class="back" href="./index.html">← กลับหน้าแรก</a>
+  </div>
+  <section class="topup-hero"><span>TOP UP SYSTEM · PORTFOLIO DEMO</span><h1>เติมเงินเข้าระบบ</h1><p>เลือกช่องทางเติมเงินที่ต้องการ ระบบหน้านี้เป็น UI Demo และยังไม่มีการรับเงินจริง</p></section>
+  <section class="methods">
+    <article class="method"><div class="method-icon">▦</div><div><strong>QR Code</strong><small>สแกน QR เพื่อชำระเงิน</small></div><button data-demo="QR Code">เลือกช่องทาง</button></article>
+    <article class="method"><div class="method-icon">◎</div><div><strong>ซองอั่งเปา</strong><small>รองรับลิงก์ซองของขวัญ TrueMoney</small></div><button data-demo="ซองอั่งเปา">เลือกช่องทาง</button></article>
+    <article class="method"><div class="method-icon">฿</div><div><strong>TrueMoney Wallet</strong><small>ชำระผ่าน TrueMoney Wallet</small></div><button data-demo="TrueMoney Wallet">เลือกช่องทาง</button></article>
+  </section>
+  <div class="demo-note">หมายเหตุ: หน้าเติมเงินนี้จัดทำเพื่อแสดง User Flow และ UI/UX ใน Portfolio เท่านั้น ไม่มีการเชื่อมต่อ Payment Gateway จริง</div>
+</main>
+<script>document.querySelectorAll("[data-demo]").forEach(b=>b.addEventListener("click",()=>alert(b.dataset.demo+" — Portfolio Demo ยังไม่มีการรับเงินจริง")));</script>
+</body>
+</html>
