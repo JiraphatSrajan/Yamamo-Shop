@@ -39,5 +39,5 @@ const products = [
   {id:503,category:"farm",farmMap:"fisch",name:"หินเอนชาจใหม่",game:"FISCH FARMING SERVICE",price:2,symbol:"FI",desc:"บริการแมพ Fisch — หินเอนชาจใหม่ อันละ 2 บาท",artA:"#07111d",artB:"#14324a",badge:"FISCH",imageData:"assets/fisch-enchant-stone.webp"},
   {id:504,category:"farm",farmMap:"fisch",name:"เนสซี",game:"FISCH FARMING SERVICE",price:7,symbol:"FI",desc:"บริการแมพ Fisch — เนสซี ตัวละ 7 บาท",artA:"#07111d",artB:"#14324a",badge:"FISCH",imageData:"assets/fisch-nessie.webp"},
   {id:505,category:"farm",farmMap:"fisch",name:"รับฟาร์มเวล 1-1000",game:"FISCH FARMING SERVICE",price:200,symbol:"FI",desc:"บริการแมพ Fisch — ฟาร์มเลเวล 1-1000",artA:"#07111d",artB:"#14324a",badge:"FISCH",imageData:"assets/fisch-level-farm.webp"},
-  {id:506,category:"farm",farmMap:"fisch",name:"ฟาร์มเงินเป็นทีมใหม่ 100M",game:"FISCH FARMING SERVICE",price:220,symbol:"FI",desc:"บริการแมพ Fisch — 100M / 220 บาท",artA:"#07111d",artB:"#14324a",badge:"FISCH",imageData:"assets/fisch-money-farm.webp"}
+  {id:506,category:"farm",farmMap:"fisch",name:"ฟาร์มเงิน 100M",game:"FISCH FARMING SERVICE",price:220,symbol:"FI",desc:"บริการแมพ Fisch — 100M / 220 บาท",artA:"#07111d",artB:"#14324a",badge:"FISCH",imageData:"assets/fisch-money-farm.webp"}
 ];
