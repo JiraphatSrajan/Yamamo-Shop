@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yamamo Shop Preview</title>
+<link rel="stylesheet" href="styles-1.css">
+<link rel="stylesheet" href="styles-2.css">
+<link rel="stylesheet" href="styles-3.css">
+<link rel="stylesheet" href="styles-4.css">
+<link rel="stylesheet" href="styles-5.css">
+  <link rel="icon" type="image/webp" href="assets/yamamo-logo.webp">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-shell nav-list-style">
+    <a class="brand brand-horizontal" href="#top" aria-label="Yamamo Shop">
+      <span class="brand-badge brand-image">
+          <img src="assets/yamamo-logo.webp" alt="Yamamo Shop">
+        </span>
+      <span class="brand-text">
+        <strong>YAMAMO</strong>
+        <small>HUNTER SHOP</small>
+      </span>
+    </a>
+
+    <nav class="main-menu" aria-label="เมนูหลัก">
+      <a href="#top" class="active"><span class="menu-icon">⌂</span><span>หน้าแรก</span></a>
+      <a href="#store"><span class="menu-icon">▣</span><span>สินค้าทั้งหมด</span></a>
+      <a href="./topup.html"><span class="menu-icon">▤</span><span>เติมเงิน</span></a>
+      <a href="#contact"><span class="menu-icon">⌁</span><span>ติดต่อเรา</span></a>
+    </nav>
+
+    <div class="nav-actions">
+      <label class="nav-search list-search">
+        <span class="search-icon">⌕</span>
+        <input id="header-search" placeholder="ค้นหาสินค้า" aria-label="ค้นหาสินค้า" />
+      </label>
+
+      <button class="nav-cart-button" type="button" data-action="cart" aria-label="ตะกร้าสินค้า" title="ตะกร้าสินค้า">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H7.1M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>
+        <span class="nav-cart-label">ตะกร้า</span>
+        <b id="cart-count">0</b>
+      </button>
+
+      <button class="order-status-button" type="button" data-action="order-status" aria-label="ติดตามคำสั่งซื้อ" title="ติดตามคำสั่งซื้อ">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>
+        <span>สถานะออเดอร์</span>
+      </button>
+
+      <button class="account-button" type="button" data-action="account" aria-label="บัญชีผู้ใช้" title="บัญชีผู้ใช้">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm7 8a7 7 0 0 0-14 0"/></svg>
+        <span>บัญชี</span>
+      </button>
+
+      <button class="mobile-menu-toggle" type="button" aria-label="เปิดเมนู" data-action="mobile-menu">☰</button>
+    </div>
+  </div>
+
+  <div class="mobile-menu-panel" id="mobile-menu-panel">
+    <a href="#top">หน้าแรก</a>
+    <a href="#store">สินค้าทั้งหมด</a>
+    <a href="./topup.html">เติมเงิน</a>
+    <a href="#contact">ติดต่อเรา</a>
+    <button type="button" data-action="cart">ตะกร้าสินค้า <span id="mobile-cart-count">0</span></button>
+    <button type="button" data-action="order-status">ติดตามสถานะออเดอร์</button>
+    <button type="button" data-action="account">บัญชีผู้ใช้</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero-banner">
+    <div class="banner-glow glow-a"></div>
+    <div class="banner-glow glow-b"></div>
+    <div class="banner-grid"></div>
+    <div class="banner-copy">
+      <span class="banner-kicker">YAMAMO SHOP</span>
+      <h1>ศูนย์รวมไอเทมและ<br><span>Roblox Game Services</span></h1>
+      <p>ระบบร้านค้าสำหรับ Toy Code, Game Item, Robux และบริการฟาร์มในสไตล์ Hunter System</p>
+      <a href="#store" class="banner-cta">เลือกดูสินค้า <span>→</span></a>
+    </div>
+    <div class="banner-visual" aria-hidden="true">
+      <div class="orb orb-1">Y</div>
+      <div class="orb orb-2">R$</div>
+      <div class="orb orb-3">⚔</div>
+      <div class="orb orb-4">★</div>
+    </div>
+    <div class="system-panel"><span class="system-dot"></span><span>SYSTEM ONLINE</span></div>
+    <div class="system-lines" aria-hidden="true"></div>
+  </section>
+
+  <section class="shop-stats reveal-zone" aria-label="สถิติร้าน">
+    <article class="stat-card system-stat">
+      <div class="stat-copy">
+        <div class="stat-topline"><span class="stat-label">ผู้ใช้งาน</span><span class="stat-chip neutral">NEW</span></div>
+        <strong class="stat-value">0 <small>คน</small></strong>
+        <span class="stat-sub">ยังไม่มีผู้ใช้งาน</span>
+      </div>
+      <span class="stat-icon system-ring">◎</span><span class="hud-corner hud-tl"></span><span class="hud-corner hud-br"></span>
+    </article>
+
+    <article class="stat-card system-stat">
+      <div class="stat-copy">
+        <div class="stat-topline"><span class="stat-label">ยอดเติม</span><span class="stat-chip neutral">0 THB</span></div>
+        <strong class="stat-value">0 <small>บาท</small></strong>
+        <span class="stat-sub">ยังไม่มียอดเติม</span>
+      </div>
+      <span class="stat-icon system-ring">◉</span><span class="hud-corner hud-tl"></span><span class="hud-corner hud-br"></span>
+    </article>
+
+    <article class="stat-card system-stat">
+      <div class="stat-copy">
+        <div class="stat-topline"><span class="stat-label">สต็อก</span><span class="stat-chip neutral">EMPTY</span></div>
+        <strong class="stat-value">0 <small>ชิ้น</small></strong>
+        <span class="stat-sub">ยังไม่มีสินค้าเปิดขายจริง</span>
+      </div>
+      <span class="stat-icon system-ring">▣</span><span class="hud-corner hud-tl"></span><span class="hud-corner hud-br"></span>
+    </article>
+
+    <article class="stat-card system-stat">
+      <div class="stat-copy">
+        <div class="stat-topline"><span class="stat-label">ยอดขาย</span><span class="stat-chip neutral">0 ORDER</span></div>
+        <strong class="stat-value">0 <small>ครั้ง</small></strong>
+        <span class="stat-sub">ยังไม่มีประวัติการขาย</span>
+      </div>
+      <span class="stat-icon system-ring">□</span><span class="hud-corner hud-tl"></span><span class="hud-corner hud-br"></span>
+    </article>
+  </section>
+
+  <section class="category-section reveal-zone" id="categories">
+    <div class="category-heading">
+      <div>
+        <span class="eyebrow">RECOMMENDED CATEGORIES</span>
+        <h2>หมวดหมู่แนะนำสำหรับคุณ</h2>
+        <p>เลือกหมวดหมู่ที่สนใจเพื่อดูสินค้าและบริการภายในร้าน</p>
+      </div>
+      <a class="category-more" href="#store">ดูเพิ่มเติม <span>›</span></a>
+    </div>
+
+    <div class="category-grid">
+      <button class="category-card" data-category="robux">
+        <div class="category-banner category-blue"><span class="category-badge">ROBUX</span><span class="category-big-icon">R$</span><div class="category-lines"></div></div>
+        <div class="category-info"><div><h3>เติม Robux</h3><p>Robux แท้หลายแพ็ก ตั้งแต่ 210 ถึง 10,010 Robux</p></div><span class="category-button">สินค้าทั้งหมด</span></div>
+      </button>
+
+      <button class="category-card" data-category="toycode">
+        <div class="category-banner category-violet"><span class="category-badge">TOY CODE</span><span class="category-big-icon">TC</span><div class="category-lines"></div></div>
+        <div class="category-info"><div><h3>Roblox Toy Code</h3><p>รวม Toy Code และไอเทมสะสม</p></div><span class="category-button">สินค้าทั้งหมด</span></div>
+      </button>
+
+      <button class="category-card" data-category="gamepass">
+        <div class="category-banner category-indigo"><span class="category-badge">GAMEPASS</span><span class="category-big-icon">GP</span><div class="category-lines"></div></div>
+        <div class="category-info"><div><h3>Gamepass</h3><p>รวม Gamepass จากเกมต่าง ๆ ใน Roblox</p></div><span class="category-button">สินค้าทั้งหมด</span></div>
+      </button>
+
+      <button class="category-card" data-category="farm">
+        <div class="category-banner category-purple"><span class="category-badge">FARM SERVICE</span><span class="category-big-icon">FM</span><div class="category-lines"></div></div>
+        <div class="category-info"><div><h3>บริการรับฟาร์มแมพ</h3><p>บริการฟาร์ม Fisch และเกมอื่น ๆ</p></div><span class="category-button">สินค้าทั้งหมด</span></div>
+      </button>
+
+      <button class="category-card" data-category="items">
+        <div class="category-banner category-night"><span class="category-badge">SPECIAL</span><span class="category-big-icon">★</span><div class="category-lines"></div></div>
+        <div class="category-info"><div><h3>สินค้าและบริการพิเศษ</h3><p>หมวดรวมสินค้าและบริการเพิ่มเติมของร้าน</p></div><span class="category-button">สินค้าทั้งหมด</span></div>
+      </button>
+    </div>
+  </section>
+
+  <section class="store reveal-zone" id="store">
+    <div class="store-heading">
+      <div><span class="eyebrow">SHOP CATALOG</span><h2>สินค้าและบริการทั้งหมด</h2><p>เลือกหมวดหมู่หรือค้นหาสินค้าที่ต้องการ</p></div>
+      <label class="catalog-search"><span>⌕</span><input id="search" placeholder="ค้นหาไอเทม Robux หรือบริการ..." /></label>
+    </div>
+
+    <div class="filter-row">
+      <div class="filters" id="filters">
+        <button class="selected" data-filter="all">ทั้งหมด</button>
+        <button data-filter="toycode">Toy Code</button>
+        <button data-filter="gamepass">Gamepass</button>
+        <button data-filter="items">ไอเทมในเกม</button>
+        <button data-filter="robux">เติม Robux</button>
+        <button data-filter="farm">รับฟาร์มแมพ</button>
+      </div>
+      <select id="sort" aria-label="เรียงสินค้า">
+        <option value="featured">สินค้าแนะนำ</option>
+        <option value="low">ราคา: ต่ำ → สูง</option>
+        <option value="high">ราคา: สูง → ต่ำ</option>
+      </select>
+    </div>
+
+    <div id="products" class="product-grid"></div>
+  </section>
+
+  <section class="reviews reveal-zone" aria-labelledby="reviews-title">
+    <div class="review-heading">
+      <div><span class="eyebrow">CUSTOMER REVIEWS</span><h2 id="reviews-title">รีวิวจากลูกค้า</h2><p>รีวิวจริงจากผู้ใช้บริการ Yamamo Shop</p></div>
+    </div>
+    <div class="empty-review-card">
+      <div class="empty-review-icon">☆</div>
+      <div class="empty-review-copy"><span class="empty-review-kicker">NO REVIEWS YET</span><h3>ยังไม่มีลูกค้ารีวิว</h3><p>เมื่อมีลูกค้าใช้บริการและส่งรีวิวเข้ามา รีวิวจริงจะแสดงในส่วนนี้</p></div>
+      <div class="empty-review-status"><span class="status-pulse"></span>รอรีวิวแรก</div>
+    </div>
+  </section>
+</main>
+
+<section class="facebook-section reveal-zone" aria-label="Facebook">
+  <div class="facebook-card">
+    <div class="facebook-left">
+      <div class="facebook-icon" aria-hidden="true">f</div>
+      <div class="facebook-copy"><span class="facebook-kicker">YAMAMO COMMUNITY</span><h2>ติดตามร้านบน Facebook</h2><p>ติดตามข่าวสาร อัปเดตสินค้า โปรโมชั่น และประกาศจาก Yamamo Shop</p></div>
+    </div>
+    <a class="facebook-button" href="https://www.facebook.com/profile.php?id=100072035561950" target="_blank" rel="noopener noreferrer">เปิด Facebook <span>↗</span></a>
+  </div>
+</section>
+
+<section class="faq-section reveal-zone" id="faq">
+  <div class="faq-heading"><div><span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span><h2>คำถามที่พบบ่อย</h2><p>ข้อมูลพื้นฐานก่อนสั่งซื้อและใช้บริการ Yamamo Shop</p></div></div>
+
+  <div class="faq-list">
+    <article class="faq-item">
+      <button class="faq-question" type="button" aria-expanded="false"><span><b>เติมเงินยังไง?</b><small>วิธีเติมเครดิตเข้าระบบ</small></span><span class="faq-toggle">＋</span></button>
+      <div class="faq-answer"><div><p>กดเมนู <strong>“เติมเงิน”</strong> ด้านบน จากนั้นเลือกจำนวนเงินและช่องทางที่ต้องการ เช่น QR Code, ซองอั่งเปา หรือ TrueMoney Wallet แล้วทำตามขั้นตอนบนหน้าเติมเงิน</p><p class="faq-note">ตอนนี้หน้าเว็บยังเป็น Demo จึงยังไม่มีการรับเงินจริงหรือเชื่อมระบบชำระเงินจริง</p></div></div>
+    </article>
+
+    <article class="faq-item">
+      <button class="faq-question" type="button" aria-expanded="false"><span><b>รอของนานจัง?</b><small>ระยะเวลาในการจัดส่งสินค้าและบริการ</small></span><span class="faq-toggle">＋</span></button>
+      <div class="faq-answer"><div><p>ระยะเวลาขึ้นอยู่กับประเภทสินค้าและบริการ หากเป็นโค้ดหรือสินค้าดิจิทัลจะจัดส่งหลังตรวจสอบรายการ ส่วนบริการฟาร์มหรือบริการที่ต้องดำเนินการภายในเกมอาจใช้เวลานานกว่า</p><p class="faq-note">หากรอนานกว่าปกติ สามารถติดต่อผ่าน Facebook ของร้านพร้อมแจ้งเลขคำสั่งซื้อเพื่อตรวจสอบสถานะได้</p></div></div>
+    </article>
+
+    <article class="faq-item">
+      <button class="faq-question" type="button" aria-expanded="false"><span><b>วิธีซื้อของ?</b><small>ขั้นตอนการสั่งซื้อสินค้า</small></span><span class="faq-toggle">＋</span></button>
+      <div class="faq-answer"><div><p>เลือกสินค้าที่ต้องการจากหน้า <strong>“สินค้าทั้งหมด”</strong> กดเพิ่มลงตะกร้า ตรวจสอบรายการและจำนวนสินค้า จากนั้นดำเนินการสั่งซื้อและชำระเงินตามช่องทางที่ระบบรองรับ</p><p class="faq-note">ก่อนยืนยันคำสั่งซื้อควรตรวจสอบชื่อสินค้า จำนวน และข้อมูลที่กรอกให้ถูกต้องทุกครั้ง</p></div></div>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <a class="brand footer-brand" href="#top">
+    <span class="brand-badge brand-image"><img src="assets/yamamo-logo.webp" alt="Yamamo Shop"></span>
+    <span class="brand-text"><strong>YAMAMO</strong><small>GAME ITEM STORE</small></span>
+  </a>
+  <p></p>
+  <small>© 2026 Yamamo Shop · ไม่ใช่ร้านค้าอย่างเป็นทางการของ Roblox</small>
+</footer>
+
+<dialog id="modal">
+  <div class="modal-top"><strong id="modal-label">YAMAMO SHOP</strong><button id="close-modal" aria-label="ปิด">✕</button></div>
+  <div id="modal-body"></div>
+</dialog>
+
+<div id="toast" role="status"></div>
+
+<script src="app-1.js"></script>
+<script src="app-2.js"></script>
+</body>
+</html>
