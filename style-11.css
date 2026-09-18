@@ -1,0 +1,132 @@
+.cart-line-right{
+    grid-column:1/-1;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+}
+
+/* ===== Toy Code catalog ===== */
+.product-card .product-art[style*="#8e3de9"],
+.product-card .product-art[style*="#8736e6"],
+.product-card .product-art[style*="#833ee2"],
+.product-card .product-art[style*="#7f33d5"],
+.product-card .product-art[style*="#7c39dc"],
+.product-card .product-art[style*="#7231d8"],
+.product-card .product-art[style*="#6d35cf"]{
+  background:
+    radial-gradient(circle at 78% 22%,rgba(255,255,255,.20),transparent 18%),
+    linear-gradient(145deg,#6f31d8 0%,#a341e3 48%,#f05bd5 100%) !important;
+}
+
+.product-card .product-art[style*="#34220d"]{
+  background:
+    radial-gradient(circle at 75% 22%,rgba(255,221,130,.18),transparent 18%),
+    linear-gradient(145deg,#19130c 0%,#443018 52%,#8f6425 100%) !important;
+}
+
+.product-card .product-art .art-symbol{transition:.25s ease}
+.product-card:hover .product-art .art-symbol{transform:rotate(-2deg) scale(1.05)}
+
+.product-card .product-art[style*="#8e3de9"] .product-badge,
+.product-card .product-art[style*="#8736e6"] .product-badge,
+.product-card .product-art[style*="#833ee2"] .product-badge{
+  color:#fff;background:linear-gradient(135deg,#ff4668,#ff2a50);border:0;
+}
+
+/* ===== Toy Code Sold Out ===== */
+.sold-out-card{
+  border-color:#2a2f39 !important;
+  background:linear-gradient(180deg,#0b0d12,#12151d) !important;
+  box-shadow:0 12px 30px rgba(0,0,0,.16),inset 0 0 0 1px rgba(255,255,255,.015);
+}
+.sold-out-card:hover{
+  transform:translateY(-2px);
+  border-color:#343a46 !important;
+  box-shadow:0 16px 34px rgba(0,0,0,.22);
+}
+.sold-out-card .product-info{background:linear-gradient(180deg,#0e1117,#141821)}
+.sold-out-card .game-name{color:#707784 !important}
+.sold-out-card .product-info h3{color:#e9edf5}
+.sold-out-card .product-info p{color:#7c8490}
+
+.sold-out-art{
+  background:radial-gradient(circle at 78% 24%,rgba(255,255,255,.055),transparent 18%),linear-gradient(145deg,#050608 0%,#0b0d12 52%,#141722 100%) !important;
+  filter:saturate(.08);
+}
+.sold-out-art::before{
+  background:linear-gradient(135deg,transparent 0 45%,rgba(255,255,255,.035) 45% 46%,transparent 46%),radial-gradient(circle at 25% 22%,rgba(255,255,255,.035),transparent 17%) !important;
+}
+.sold-out-card .art-symbol{
+  color:#545964 !important;
+  background:linear-gradient(145deg,#d9dce2,#9da1aa) !important;
+  opacity:.72;
+  box-shadow:0 14px 28px rgba(0,0,0,.3),inset 0 0 0 7px rgba(50,53,60,.15) !important;
+}
+.sold-out-badge{
+  color:#fff !important;background:linear-gradient(135deg,#20242c,#090a0d) !important;
+  border:1px solid #4a4f5b !important;box-shadow:0 6px 16px rgba(0,0,0,.3) !important;
+}
+.sold-out-overlay{
+  position:absolute;inset:0;z-index:4;display:grid;place-items:center;color:rgba(255,255,255,.94);
+  background:rgba(0,0,0,.40);backdrop-filter:blur(1px);
+  font:900 clamp(18px,2.1vw,28px)/1 'Inter',sans-serif;letter-spacing:.14em;
+  text-shadow:0 2px 14px rgba(0,0,0,.8);pointer-events:none;
+}
+.sold-out-price{color:#6f7682 !important;text-decoration:line-through}
+.sold-out-button{
+  color:#777e89 !important;background:#20242b !important;border:1px solid #2f343e;
+  box-shadow:none !important;cursor:not-allowed;opacity:1;
+}
+.sold-out-button:hover{transform:none !important;box-shadow:none !important}
+.sold-out-card .product-art::after{color:rgba(255,255,255,.30) !important}
+@media(max-width:620px){.sold-out-overlay{font-size:18px}}
+
+/* ===== Toy Code clean mark + Gamepass ===== */
+.toycode-mark{
+  color:#d7d9e0 !important;background:linear-gradient(145deg,#2b2f38,#14171d) !important;
+  border:1px solid #424751 !important;
+  box-shadow:0 14px 28px rgba(0,0,0,.34),inset 0 0 0 6px rgba(255,255,255,.025) !important;
+  font:800 18px/1 'Inter',sans-serif !important;letter-spacing:.12em;
+}
+.gamepass-card{border-color:#c9d4e7;background:linear-gradient(180deg,#fff,#f9faff)}
+.gamepass-art{
+  background:radial-gradient(circle at 78% 24%,rgba(83,194,255,.16),transparent 19%),radial-gradient(circle at 22% 78%,rgba(130,76,255,.17),transparent 23%),linear-gradient(135deg,var(--art-a),var(--art-b)) !important;
+}
+.gamepass-art .art-symbol{
+  color:#2846bd;background:linear-gradient(145deg,#fff,#e8ecff);
+  border:1px solid rgba(177,188,255,.55);
+  box-shadow:0 16px 32px rgba(9,24,78,.24),0 0 26px rgba(88,114,255,.12);
+  font:800 22px/1 'Inter',sans-serif;letter-spacing:.06em;
+}
+.gamepass-card .product-badge{color:#fff;background:linear-gradient(135deg,#17399f,#3456d7 60%,#6035ad);border:0}
+.gamepass-price{color:#4f5cb8 !important;font-size:13px !important}
+.gamepass-detail-button{background:linear-gradient(135deg,#17399f,#3155d5 62%,#5f35ad)}
+.gamepass-modal{text-align:center}
+.gamepass-modal-icon{
+  width:72px;height:72px;margin:0 auto 15px;display:grid;place-items:center;border-radius:20px;color:#fff;
+  background:linear-gradient(135deg,#17399f,#3558d7 60%,#6035ae);
+  box-shadow:0 12px 28px rgba(44,58,160,.2);font:800 23px/1 'Inter',sans-serif;
+}
+.gamepass-coming{
+  margin:16px 0;padding:14px;border:1px solid #d8dff0;border-radius:12px;
+  background:linear-gradient(135deg,#f1f4ff,#f4efff);
+}
+.gamepass-coming span,.gamepass-coming strong{display:block}
+.gamepass-coming span{color:#8d97a8;font-size:8px}
+.gamepass-coming strong{margin-top:4px;color:#3d4ba8;font-size:11px}
+
+/* ===== Gamepass Coming Soon — Black Theme ===== */
+.coming-soon-card{
+  border-color:#292e39 !important;background:linear-gradient(180deg,#090b0f,#11151c) !important;
+  box-shadow:0 12px 30px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.015);
+}
+.coming-soon-card:hover{
+  transform:translateY(-2px);border-color:#343a48 !important;
+  box-shadow:0 18px 38px rgba(0,0,0,.23),0 0 26px rgba(83,67,176,.05);
+}
+.coming-soon-card .product-info{background:linear-gradient(180deg,#0d1016,#141821)}
+.coming-soon-card .game-name{color:#727987 !important}
+.coming-soon-card .product-info h3{color:#eef1f7}
+.coming-soon-card .product-info p{color:#747c89}
