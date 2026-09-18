@@ -161,6 +161,3 @@ Yamamo-Shop/
 ## 👤 Developer
 
 **Jiraphat Srajan (จิรภัทร สระจันทร์)**
-
-นักศึกษาสาขา Information and Communication Technology  
-สนใจด้าน Web Development, UX/UI Design และ AI-Assisted Development
