@@ -117,21 +117,18 @@ Yamamo Shop เป็นโปรเจกต์เว็บไซต์ร้�
 
 ## 📂 โครงสร้างโปรเจกต์
 
-```text
+\`\`\`text
 Yamamo-Shop/
-├── index.html              หน้าหลักของร้าน
-├── topup.html              หน้าเติมเงินแบบ Demo
-├── app-01.js               ข้อมูลสินค้าและบริการ
-├── app-02.js               Logic, Cart, Checkout และ Order Status
-├── style-01.css
-├── style-02.css
-├── ...
-├── style-15.css            CSS และ Responsive Design
-├── assets/
-│   ├── yamamo-logo.webp
-│   └── fisch-*.webp        รูปประกอบบริการ Fisch
-└── README.md
-```
+├── index.html        หน้าหลักของร้าน
+├── topup.html        หน้าเติมเงินแบบ Demo
+├── styles.css        UI, Animation และ Responsive Design
+├── app.js            ข้อมูลสินค้า, Cart, Checkout และ Order Status
+├── assets/           โลโก้และรูปประกอบสินค้า/บริการ
+├── .github/
+│   └── workflows/
+│       └── pages.yml ระบบ Deploy GitHub Pages
+└── README.md         รายละเอียดโปรเจกต์
+\`\`\`
 
 ## 🌐 Live Preview
 
