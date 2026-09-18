@@ -159,7 +159,7 @@ Yamamo-Shop/
 - มีหน้า Top Up Demo
 - รองรับ Responsive Design
 - มี Animation และ Interactive UI
-- เตรียมเผยแพร่ผ่าน GitHub Pages
+- ตั้งค่า GitHub Pages สำหรับ Public Preview แล้ว
 
 ## 👤 Developer
 
