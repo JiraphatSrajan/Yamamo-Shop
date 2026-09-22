@@ -117,7 +117,7 @@ Yamamo Shop เป็นโปรเจกต์เว็บไซต์ร้�
 
 ## 📂 โครงสร้างโปรเจกต์
 
-\`\`\`text
+```text
 Yamamo-Shop/
 ├── index.html        หน้าหลักของร้าน
 ├── topup.html        หน้าเติมเงินแบบ Demo
@@ -128,7 +128,7 @@ Yamamo-Shop/
 │   └── workflows/
 │       └── pages.yml ระบบ Deploy GitHub Pages
 └── README.md         รายละเอียดโปรเจกต์
-\`\`\`
+```
 
 ## 🌐 Live Preview
 
